@@ -14,7 +14,7 @@ import javax.swing.border.Border;
  * @author Jeremy Timothy Brown
  *
  */
-public class CreateWindow extends JPanel{
+public class CreateWindow extends JFrame{
 
 	private static JFrame window;
 	private static JPanel startPanel;
