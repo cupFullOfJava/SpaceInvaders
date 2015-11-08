@@ -29,7 +29,6 @@ public class GameScreen extends JPanel{
     public GameScreen(){
         setPreferredSize(new Dimension(W_WIDTH, W_HEIGHT));
         setBackground(Color.BLACK);
-        setLayout(new GridLayout(0,1));
 
         //create images
         try {
@@ -45,19 +44,6 @@ public class GameScreen extends JPanel{
         cannonBullet = new ImageIcon(cannonBulletImg.getScaledInstance(64, 64, Image.SCALE_SMOOTH));
         enemyBullet = new ImageIcon(enemyBulletImg.getScaledInstance(64, 64, Image.SCALE_SMOOTH));
         //end image creation
-
-        //testers for images
-        //JLabel logoLabel = new JLabel("", cannon, JLabel.CENTER);
-        //JLabel logoLabel1 = new JLabel("", enemy, JLabel.CENTER);
-        //JLabel logoLabel2 = new JLabel("", saucer, JLabel.CENTER);
-        //JLabel logoLabel3 = new JLabel("", cannonBullet, JLabel.CENTER);
-        //JLabel logoLabel4 = new JLabel("", enemyBullet, JLabel.CENTER);
-        //add(logoLabel);
-        //add(logoLabel1);
-        //add(logoLabel2);
-        //add(logoLabel3);
-        //add(logoLabel4);
-        //end testers
 
     }
 }
