@@ -7,6 +7,7 @@ import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import javax.imageio.ImageIO;
+import javax.swing.border.Border;
 
 
 /**
@@ -22,10 +23,13 @@ public class CreateWindow extends JPanel{
 	private static ImageIcon logo;
 	private static JLabel logoLabel;
 	private static JButton startButton;
-	
+
 	private static final int W_WIDTH = 1100;
 	private static final int W_HEIGHT = 1300;
-	
+
+	/**
+	 * Constructor class.  Creates the window which the main menu will be displayed  in.
+	 */
 	public CreateWindow(){
 
 		//creates start window
@@ -61,10 +65,9 @@ public class CreateWindow extends JPanel{
 
 		//create start button
 		startButton = new JButton("START");
-		startButton.setFont(new Font("Serif", Font.BOLD, 100));
+		startButton.setFont(new Font("Courier New", Font.PLAIN, 150));
 		startButton.setBackground(Color.RED);
 		startButton.setForeground(Color.BLACK);
-
 		startButton.setFocusPainted(false);
 		startButton.setBorderPainted(false);
 		//end creating start button
