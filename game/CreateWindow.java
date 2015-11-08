@@ -22,19 +22,17 @@ public class CreateWindow extends JPanel{
 	private static ImageIcon logo;
 	private static JLabel logoLabel;
 	private static JButton startButton;
-
-	private static boolean clear = false;
 	
 	private static final int W_WIDTH = 1100;
 	private static final int W_HEIGHT = 1300;
 	
 	public CreateWindow(){
 
-		//creates game window
+		//creates start window
 		window = new JFrame();
 		window.setBackground(Color.BLACK);
 		window.setResizable(false);
-		window.setTitle("Space Invaders");
+		window.setTitle("Main Menu - Space Invaders");
 		window.setSize(W_WIDTH,W_HEIGHT);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//end creating window
@@ -83,7 +81,7 @@ public class CreateWindow extends JPanel{
 		class AddClickListener implements ActionListener{
 			public void actionPerformed(ActionEvent e){
 				window.dispose();
-				//OpenGame();
+				OpenGame g = new OpenGame();
 			}
 		}
 

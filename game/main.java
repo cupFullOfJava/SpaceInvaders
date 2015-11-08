@@ -16,7 +16,7 @@ public class main {
 	 */
 	public static void main(String[] args) {
 		CreateWindow f = new CreateWindow();
-		OpenGame g = new OpenGame();
+		//OpenGame g = new OpenGame();
 	}
 
 }
