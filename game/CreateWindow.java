@@ -84,7 +84,7 @@ public class CreateWindow extends JFrame{
 		class AddClickListener implements ActionListener{
 			public void actionPerformed(ActionEvent e){
 				window.dispose();
-				OpenGame g = new OpenGame();
+				GameWindow g = new GameWindow();
 			}
 		}
 

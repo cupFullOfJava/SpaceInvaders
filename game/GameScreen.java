@@ -26,9 +26,13 @@ public class GameScreen extends JPanel{
     public static ImageIcon enemyBullet;
     public static ImageIcon saucer;
 
+    /**
+     * Constructor class which creates the game window, as well the pictures to be used in the game.
+     */
     public GameScreen(){
         setPreferredSize(new Dimension(W_WIDTH, W_HEIGHT));
         setBackground(Color.BLACK);
+        setLayout(null);
 
         //create images
         try {
@@ -38,12 +42,19 @@ public class GameScreen extends JPanel{
             cannonBulletImg = ImageIO.read(new File("bullet.png"));
             enemyBulletImg = ImageIO.read(new File("enemybullet.png"));
         } catch (IOException e) {}
-        cannon = new ImageIcon(playerImg.getScaledInstance(100, 50, Image.SCALE_SMOOTH));
+        cannon = new ImageIcon(playerImg.getScaledInstance(90, 40, Image.SCALE_SMOOTH));
         enemy = new ImageIcon(alienImg.getScaledInstance(100, 80, Image.SCALE_SMOOTH));
         saucer = new ImageIcon(saucerImg.getScaledInstance(230, 150, Image.SCALE_SMOOTH));
         cannonBullet = new ImageIcon(cannonBulletImg.getScaledInstance(64, 64, Image.SCALE_SMOOTH));
         enemyBullet = new ImageIcon(enemyBulletImg.getScaledInstance(64, 64, Image.SCALE_SMOOTH));
         //end image creation
 
+
+
+
+
+
     }
+
+
 }
