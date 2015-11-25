@@ -23,8 +23,8 @@ public class MainWindow extends JFrame{
     private static JLabel logoLabel;
     private static JButton startButton;
   
-    private static final int W_WIDTH = 1100;
-    private static final int W_HEIGHT = 1300;
+    private static final int W_WIDTH = 600;
+    private static final int W_HEIGHT = 500;
   
     /**
      * Constructor method.  Creates the window which the main menu will be displayed  in.
@@ -75,7 +75,7 @@ public class MainWindow extends JFrame{
         try {
             img = ImageIO.read(new File("spaceInvadersStart.png"));
         } catch (IOException e) {}
-        logo = new ImageIcon(img.getScaledInstance(900, 600, Image.SCALE_SMOOTH));
+        logo = new ImageIcon(img.getScaledInstance(400, 200, Image.SCALE_SMOOTH));
         logoLabel = new JLabel("", logo, JLabel.CENTER);
         //end logo display creation
   
